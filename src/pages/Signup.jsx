@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
 export default function Signup() {
@@ -69,9 +69,9 @@ export default function Signup() {
           </button>
 
           <div className="text-center mt-4">
-            <a href="/login" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-200">
+            <Link to="/login" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-200">
               Already have an account? <span className="font-semibold underline">Login</span>
-            </a>
+            </Link>
           </div>
         </form>
       </div>
